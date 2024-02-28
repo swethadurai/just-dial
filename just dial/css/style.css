@@ -1,0 +1,1479 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family: "Poppins",sans-serif;
+    overflow-x: hidden;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: -7px;
+    
+}
+
+.tooltip:hover span {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: -6em;
+    left: 20em;
+    z-index: 99;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    
+    
+.tooltip span {
+	background: none repeat scroll 0 0 #222; /*-- some basic styling */
+	color: #F0B015;
+	font-family: 'Helvetica';
+	font-size: 0.8em;
+	font-weight: normal;
+	line-height: 1.5em;
+	padding: 16px 15px;
+	width: 240px;
+	top: -4em;  /*-- this is the original position of the tooltip when it's hidden */
+	left: 20em;
+	margin-left: 0;	
+	/*-- set opacity to 0 otherwise our animations won't work */
+	opacity: 0;
+	filter: alpha(opacity=0);  	
+	position: absolute;
+	text-align: center;	
+	z-index: 2;
+	text-transform: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease-in-out;
+}
+
+.tooltip span:after {
+	border-color: #222 rgba(0, 0, 0, 0);
+	border-style: solid;
+	border-width: 15px 15px 0;
+	bottom: -15px;
+	content: "";
+	display: block;
+	left: 31px;
+	position: absolute;
+	width: 0;
+}
+
+.small-text{
+    font-size: 12px;
+    background-color: rgb(236, 6, 6);
+    color: white;
+    font-weight: 700;
+    max-width: 60px;
+    max-height: 17px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -17px;
+    margin-left: 25px;
+}
+.elements svg{
+    margin-right: 4px;
+}
+.navbar{
+    margin-left: auto;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: -25px;
+  
+    
+}
+.elements{
+  
+    display: flex;
+    justify-content: space-around;
+    justify-content: flex-end;
+    margin-top: 12px;
+    font-size: 14px;
+}
+.elements li{
+    list-style: none;
+    margin-left: 5px;
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+.loginbtn{
+    margin-top: -6px;
+    max-height: 32px;
+    font-size: 14px;
+    padding-top: -10px!important;   
+}
+.loginbtn:hover{
+    background-color: rgb(90, 175, 255);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+.loginbtn1{
+    width: 168px;
+}
+
+.line{
+    display: none;
+    
+}
+.nav-elements{
+    margin-left: 30%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    margin-top: 5px;
+}
+.elements li:hover{
+   background-color: rgb(231, 229, 229);
+   max-height: 32px;
+   max-width: 170px;
+   
+}
+.head1{
+    margin-top: -10px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+.content{
+    padding: 10px;
+}
+.location input{
+    margin-top: 0.5px;
+      border: none;
+      width: 200px;
+      box-shadow: none;
+      background: transparent;
+}
+.location input:focus{
+    border: none;
+}
+.location svg{
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.boxview{
+    margin-left: 40px;
+}
+.sharechat{
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    background: transparent;
+}
+.location{
+    background-color: rgb(241, 241, 241);
+   padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    width:250px;
+    height: 48px;
+    font-size: 14px;
+    margin-left: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-transform: capitalize;
+   
+}
+.textinput{
+    margin-left: 30px;
+    height: 48px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    width:480px;
+    font-size: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.orangesearch{
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px!important;
+   border-radius: 5px;
+   margin-left: 10px;
+height: 30px;
+margin-top: -2px;
+}
+.searchbtn{
+    float: right;
+    margin-top: 0px;
+    display: flex;
+}
+.textinput input{
+    width: 450px;
+    border: none;
+}
+.icon{
+    width: 30px;
+}
+.mic{
+ font-size: 20px;
+ margin-top: 2px;
+ font-weight: 700;
+}
+.content{
+    margin-left: 30px;
+}
+.content2{
+    margin-bottom: 40px;
+    color: white;
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-left: -10px;
+}
+.banner1 img ,.banner2 img ,.banner3 img,.banner4 img{
+    margin-top: -215px;
+    margin-left: 12px;
+   
+}
+.banner1:hover,.banner2:hover,.banner3:hover,.banner4:hover{
+    img{
+        transform: scale(1.1);
+        margin-left: 5px;
+        margin-top: -230px; 
+    }
+    .banner-head{
+        transform: scale(1.1);
+        margin-left: 10px;
+    }
+    .explore1,.explore2,.explore3,.explore4{
+       
+        width: 90px;
+       height: 25px;
+       
+        
+    }
+    .explore1 svg,.explore2 svg,.explore3 svg,.explore4 svg{
+        display: none;
+    }
+    .Explorepara1,.Explorepara2,.Explorepara3,.Explorepara4{
+        display: block;
+        z-index: 4;
+        font-weight: 600;
+    }
+
+    
+}
+
+.Explorepara1,.Explorepara2,.Explorepara3,.Explorepara4{
+    display: none;
+    z-index: 4;
+    position: relative;
+}
+.explore1,.explore2,.explore3,.explore4{
+    margin-top: 100px;
+    max-width: 20px;
+    padding: 3px;
+    margin-left: -10px;
+    border-radius: 5px;
+}
+
+.explore1{
+    background-color: rgb(15, 125, 216);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+
+
+}
+.explore2{
+    background-color: rgb(38, 84, 161);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.explore3{
+    background-color: rgb(103,105,208);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+}
+.explore4{
+    background-color: #00ac7d;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+/* .banner1 img:hover ,.banner2 img:hover,.banner3 img:hover,.banner4 img:hover{
+    transform: scale(1.1);
+    margin-left: 5px;
+    margin-top: -110px;
+}
+.banner-head:hover{
+    transform: scale(1.1);
+} */
+.no-underline{
+    text-decoration: none;
+}
+.popular-search-head{
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 25px;
+}
+.corousal
+{
+    display: flex;
+    justify-content:space-around ;
+}
+#republicbanner{
+    border-radius: 10px;
+}
+.banner1{
+    background-color: rgb(15, 125, 216);
+   font-weight: 700;
+    max-width: 160px;
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 100%;
+   
+   
+}
+.banner2{
+    background-color: rgb(38, 84, 161);
+   
+    max-width: 160px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.banner3{
+    background-color: rgb(103,105,208);
+
+    max-width: 160px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.banner4{
+    background-color: #00ac7d;
+ 
+    max-width: 160px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.banner-head{
+    margin-top: 30px;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footli li a{
+     
+      color: rgb(110, 110, 110);
+      text-decoration: none;
+}
+.footli li:hover{
+    text-decoration: underline;
+}
+.footli li{
+    padding: 10px;
+}
+.page-footer {
+    font-size: 14px;
+}
+.footer-copyright{
+    margin-left: 120px;
+}
+.foothead{
+    padding-left: 8px;
+}
+.svg{
+   padding: 2px;
+   font-size: 14px;
+   margin: 5px;
+  
+}
+.margin-left-4{
+    margin-left: 4px;
+}
+.parloranchor{
+    color: black;text-decoration: none;
+}
+.mtminnus{
+    margin-top:-7px ;
+}
+.content3{
+    margin-left: 17px;
+}
+.svg{
+    margin-right:16.7px;
+}
+.svg img{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 20px;
+    padding: 8px;
+    margin-right:20px;
+   
+}
+.box{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 46.1%;
+    padding-bottom: 0px;
+    
+    
+}
+.box img{
+    padding-right: 20px;
+}
+.box h5{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.box2{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    width: 100%;
+
+}
+.box2-1{
+   margin-bottom: 15px;
+   border-bottom: none;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+  
+}
+.box2-2{
+    margin-top: -15px;
+   
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.box2-content{
+    margin-top: 30px;
+}
+.svg1 img{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 20px;
+    padding: 2px;
+    
+}
+.svg1{
+    margin: 10px;
+    text-align: center;
+    margin-right: 17px;
+}
+.svg1 p{
+color: #048520;
+font-size: 12px;
+}
+
+.chat{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-height: 30px;
+    max-width:80px ;
+    padding-top: 2px;
+}
+.blue{
+    background-color: rgb(15, 125, 216);
+    max-width: 250px;
+    margin-left: -10px;
+    margin-top: -50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 20px;
+}
+.card{
+    
+    max-width: 250px!important;
+    border-radius: 12px;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    max-height: 300px;
+    padding-top: 7px;
+    padding-left: 9px;
+    max-width: 75px;
+   
+}
+.card img{
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.content6{
+    margin-left: 20px;
+   
+}
+.row-left-minus{
+    display: flex;
+    justify-content: space-around;
+}
+.popular{
+    display: flex;
+    justify-content: space-evenly;
+}
+.blue button{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 4px;
+    color: rgb(15, 125, 216) ;
+    font-style: bold;
+
+}
+.blue h4{
+    padding-top: 15px;
+    font-weight: 700px;
+    font-style: bold;
+}
+.content4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+margin-left: 0px;
+text-transform: capitalize;}
+.fig-caption{
+    margin-top: 13px;
+    text-align: center;
+    font-size: 14px;
+}
+.blue button{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    border-color: gray;
+    max-width: 250px;
+}
+.card:hover{
+    transform: scale(1.1);
+
+}
+.content6{
+    margin-top: 20px;
+}
+.checked{
+    color: orangered;
+}
+.box3{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 420px;
+
+}
+.content7
+{
+    margin-left: -15px;
+    margin-top: 20px;
+}
+.btns{
+    border: 1px solid rgb(209, 208, 208);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 19px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 243);
+    height: 40px;
+    padding-top:6px;
+    text-align: center;
+}
+.btns select{
+    background-color:transparent ;
+    border: none;
+}
+.box1view{
+    margin-top: 20px;
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    max-height: 250px;
+
+}
+.side{
+    margin-left: 100px;
+}
+.buttons{
+    border: 1px solid rgb(209, 208, 208);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 19px;
+    border-radius: 2px;
+    background-color: rgb(245, 245, 243);
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.call{
+    padding: 5px;
+    background-color: #048520;
+    border: none;
+    border-radius: 5px;
+    margin-left: -10px;
+    color: white;
+}
+.sidebox{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.sidebox input{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#close{
+   height: 800px;
+   display: flex;
+   justify-content: center;
+}
+.popup{
+    background-color: rgba(69, 69, 70, 0.527);
+    margin-left: 25%!important;
+
+}
+.popup-card{
+    position: absolute;
+transition: all 0.8s ease;
+transform: translateY(-70vh);
+
+}
+
+.imagebar{
+    margin-left: -6px;
+    margin-right: 0px;
+   display: flex;
+   justify-content:center;
+    
+}
+.list {
+    list-style-image: url(/html/images/check-circle-fill.svg);
+    
+}
+.address{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 20px;
+    padding: 10px;
+}
+p{
+    font-size: 14px;
+}
+
+.call{
+    height: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#close{
+    background-color: rgba(187, 187, 187, 0.349);
+    padding: 10%;
+}
+.popup{
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 20%;
+}
+.loginsignup{
+    color: white;
+    text-decoration: none;
+}
+.welcome{
+    margin-left: 50px;
+}
+.weight600{
+    font-weight: 600;
+}
+.inputspopup{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    font-size: 20px;
+    margin-left: 15%;
+}
+.otp_btn{
+    border: none;
+     background-color: gray;
+     padding: 10px;width: 250px;
+     color: white;
+     font-size: 20px;
+     border-radius: 10px;
+     margin-left: 20%;
+     margin-bottom: 20px;
+}
+.later{
+    border: none;
+    background-color: transparent;
+    margin-left: 35%;
+}
+.active{
+    color: rgb(21, 105, 184);
+}
+.location-input-bar{
+    font-size: 14px;
+    margin-top: -5px;
+}
+.recent-activity-head{
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.row-left-mminus{
+    margin-left: -50px;
+}
+.spa-img{
+    margin-left: -20px;margin-bottom: 10px;
+}
+.profile-img{
+    border-radius: 50px;
+}
+.content5{
+    margin-right:30px;
+}
+@media only screen and (max-width: 863px){
+    .card img{
+       margin-right: 10px;
+       max-width: 160px!important;
+    }
+    .card{
+        margin-left: -40px;
+        margin-right: 10px;
+        max-width: 160px!important;
+
+    }
+    .blue{
+        margin-right: 10px;
+        max-width: 160px!important;
+
+    }
+}
+@media only screen and (min-width: 1668px){
+    .content1{
+        margin-left: 20px;
+    }
+    .banner1,.banner2,.banner3,.banner4{
+        max-width: 200px;
+    }
+    .banner1:hover,.banner2:hover,.banner3:hover,.banner4:hover{
+        img{
+            margin-top: -220px;
+        }
+    }
+    .svg{
+        margin-right: 20px;
+    }
+    .svg1{
+        margin-right: 30px;
+    }
+    .content3{
+        margin-left: 30px!important;
+    }
+    .content6{
+       margin-left: 20px;
+    }
+    .card{
+       min-width: 350px!important;
+        min-height: 400px;
+    }
+    .blue{
+        min-width: 350px!important;
+        min-height: 161px;
+    }
+    .card img{
+        min-width: 350px!important;
+        min-height: 290px;
+    }
+    .recent-activity-head{
+        margin-left: 40px;
+    }
+    .box3{
+        min-width: 500px;
+    }
+    .spa-img{
+        min-width: 500px;
+    }
+    .fig-caption{
+        text-align: center;
+        margin-left: -70px;
+    }
+
+}
+@media only screen and (max-width: 1026px){
+    .banner3{
+        display: none;
+    }
+    #republicbanner{
+        max-width: 480px;
+        margin-left:-30px!important;
+       }
+       .banner1{
+        margin-left:100px!important;
+       }
+       .banner2{
+        
+        display: none;
+       }
+       .content2{
+        margin: auto;
+        padding: 0;
+       }
+       .content1{
+        margin-left:10%;
+       }
+       .svg1{
+        margin-right: 50px;
+       }
+       .card{
+        margin-left: -20px;
+       }
+       
+}
+@media only screen and (max-width: 1120px){
+    .box1view{
+       height: 300px;
+       width: 650px;
+       margin-left: 12%!important;
+    }
+    .side1box{
+        max-width: 250px;
+        margin-left: 00px!important;
+    }
+    .content0{
+        margin-left: -50px;
+    }
+    .imagebar{
+        margin-left: -80px;
+    }
+    .address{
+        margin-top: -310px;
+    }
+   .side{
+    margin-left: 170px;
+   }
+    .card img{
+        width: 200px;
+    }
+    .card{
+        width: 200px;
+    }
+    .blue{
+        width: 200px;
+    }
+    .nav-elements{
+        display: none;
+
+    }
+    .btns{
+        width: 250px!important;
+    }
+    .buttons{
+        margin-left: 0px;
+        width: 200px;
+    }
+    .call{
+        margin-left: -30px;
+        width: 180px;
+        margin-bottom: 20px;
+        
+    }
+    .call{
+        width: 180px;
+    }
+    .sidebox {
+       width: 650px;
+        height: 300px;
+        margin-left: 12%;
+    }
+    .box1view{
+        max-width: 800px;
+        margin-left: -30px;
+        max-height: 900px!important;
+    }
+    .line{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 50%
+    }
+    .content2{
+        margin: auto;
+        margin-right: 0px;
+    }
+    .logo{
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-left: -100px;
+    }
+    .content2{
+        margin-left: -35px;
+    }
+   #republicbanner{
+    width: 400px;
+   
+   }
+   .banner1{
+    margin-left: 30px;
+   }
+   .banner4{
+    display: none;
+   }
+  .svg{
+    margin-right: 90px;
+    margin-left: -60px;
+  }
+  .content3{
+    margin-top: 30px;
+    margin-left: 15%;
+  }
+  .box{
+   margin-left: 5px;
+  }
+  .box img{
+    width: 150px;
+    height: 100px;
+  }
+  .box2{
+    margin-left: -5px;
+  }
+  .box3{
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 875px){
+    .box1view{
+        height: 300px;
+        width: 650px;
+        margin-left: 5%!important;
+     }
+    .orangesearch{
+        margin-top: -6px;
+    }
+
+    .sidebox {
+        width: 650px;
+         height: 250px;
+     }
+    .icon{
+        margin-top: 0px!important;
+    }
+    .banner1{
+        margin-top: 20px;
+       margin-left: -190px!important;
+    }
+    .banner2{
+        margin-top: 20px;
+        margin-left: 0%;
+        
+    }
+    .banner3{
+       
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+    .banner4{
+        
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+    #republicbanner{
+        width: 650px;
+        
+    }
+    .content3{
+        margin-left: 0px;
+    }
+    .content4{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .content4 img{
+    width: 120px;
+    }
+    .box{
+        
+        margin-left: -10px;
+        
+    }
+    .chat{
+        width: 200px;
+    }
+    .box3, .box3 img{
+        max-width: 300px;
+    }
+    .head1{
+        max-width: 300px;
+    }
+    .location{
+        margin-bottom: 10px;
+        max-height: 40px;
+    }
+    .textinput{
+        max-width: 250px;
+        max-height: 40px;
+    }
+    .textinput input{
+        max-width: 150px;
+    }
+    .textinput svg{
+        margin-top: -20px;
+    }
+    .text-left
+    {
+        margin-left: 0px;
+    }
+    .chat{
+        margin-bottom: 15px;
+        margin-left: 8px;
+    }
+    .last{
+        margin-left: 20px;
+    }
+    .btns{
+        max-width: 270px;
+        margin-bottom: 10px;
+    }
+   
+    .buttons{
+        max-width: 100px;
+        text-align: center;
+        margin-left: 30%;
+    }
+    .side{
+        margin-left: 170px;
+       }
+    .sidebox {
+        width: 650px;
+         height: 250px;
+      margin-left:-35px ;
+    }
+    .side h4{
+        margin-top: 10px;
+    }
+  
+    .nav-elements{
+        display: none;
+    }
+    .line{
+        display: block;
+    }
+    .card{
+       width: 200px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .card img{
+        max-width: 200px;
+        margin-left: -10px;
+
+    }
+    .blue{
+        max-width: 200px;
+        margin-left: -10px;
+    }
+    .top{
+        margin-left: -25px;
+    }
+    
+    .logo{
+        margin-left: -25px;
+        margin-bottom: 20px;
+    }
+    .line{
+        margin-right: -30px;
+    }
+    footer{
+        margin-left: 100px;
+    }
+    
+}
+@media only screen and (max-width: 875px){
+    #republicbanner{
+        margin-left: -10px!important;
+    }
+    .sidebox {
+        width: 650px;
+         height: 300px;
+         margin-left: 5%;
+     }
+    .banner1{
+        display: block!important;
+        margin-left: 90px !important;
+    }
+    .content3{
+        margin-left: 10%;
+    }
+    .content5{
+        margin-left: -10px;
+    }
+    .content6{
+        margin-left: -25px;
+    }
+    .content7{
+        margin-left: -35px;
+    }
+
+}
+@media only screen and (max-width: 772px){
+    .sidebox {
+         width: 550px;
+         height: 200px;
+         margin-left: 0%!important;
+     }
+     .box1view{
+        height: 300px;
+        width: 650px;
+        margin-left: 0%!important;
+     }
+}
+@media only screen and (max-width: 767px){
+    .sidebox {
+        width: 250px;
+        height: 300px;
+        margin-left: 20%!important;
+    }
+   
+    .side{
+        margin-left: 15px;
+    }
+    .imagebar{
+        align-items: center;
+        margin-left: 20%;
+    }
+    .content0{
+        margin-left: 10%!important;
+        width: 500px!important;
+        height: 450px;
+        text-align: center;
+    }
+    .address{
+       width:120px;
+       margin-top: -400px;
+        
+    } 
+    .side1box{
+        margin-top: 160px!important;
+        max-height: 450px!important;
+        margin-left: 330px!important;
+    }
+   
+    .content01{
+      height: 450px!important;
+    }
+}
+@media only screen and (max-width: 670px){
+    .sidebox {
+        max-width: 550px;
+        height: 300px;
+        margin-left: 20%!important;
+    }
+    .box1view{
+       height: 600px;
+      width: 550px!important;
+       margin-left: -40px!important;
+       text-align: center;
+    }
+    .side{
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 768px){
+    #republicbanner{
+        margin-left: 15%!important
+    }
+}
+@media only screen and (max-width: 768px){
+    #republicbanner{
+        max-width: 450px;
+       
+        
+    }
+   
+    .svg{
+        margin-left: 35%!important;
+    }
+    .content2{
+        margin-left: 0%!important;
+    }
+    .banner1{
+        display: none;
+        margin-left: 60px!important;
+    }
+    .banner2{
+        display: block;
+    }
+    .banner3{
+        display: block;
+    }
+    .box img{
+        text-align: center;
+        margin-left: 29%;
+
+    }
+    .card{
+        max-width: 400px!important;
+        margin-left: 30%;
+    }
+    .card img{
+       max-width: 400px!important;
+    }
+    .blue{
+        max-width: 400px!important;
+    }
+
+}
+@media only screen and (max-width: 877px){
+    .banner1{
+        display: none;
+    }
+    .content2{
+        margin-left: -10%!important;
+    }
+    .box img{
+        width: 120px;
+    }
+    .content1{
+        margin-left: 10px!important;
+    }
+    .content01{
+        width: 600px!important;
+     
+        }
+}
+@media only screen and (max-width: 643px){
+    .banner4{
+        display: block;
+    }
+    .banner3{
+        margin-left: 60px;
+    }
+    .svg{
+        margin-left: 25%!important;
+    }
+}
+@media only screen and (max-width: 572px){
+    #republicbanner{
+        max-width: 450px;
+        margin-left: 50px!important;
+    }
+    .sidebox {
+        max-width: 400px;
+        height: 300px;
+        margin-left: 10%!important;
+    }
+    .box1view{
+       height: 550px;
+      width: 350px!important;
+       margin-left: -40px!important;
+       text-align: center;
+    }
+    .side{
+        margin-left: 15px;
+    }
+    .btns{
+        text-align: center;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 572px){
+    .sidebox {
+        max-width: 300px;
+        height: 300px;
+        margin-left: 10%!important;
+    }
+    .box1view{
+       height: 550px;
+      width: 300px!important;
+       margin-left: -40px!important;
+       text-align: center;
+    }
+    .side{
+        margin-left: 15px;
+    }
+    #republicbanner{
+        max-width:450px;
+    margin-left: 90px!important;}
+    .banner1{
+        margin-left: 100px!important;
+    }
+    .banner3{
+        margin-left: 100px!important;
+    }
+    .banner2{
+        margin-left: 90px!important;
+    }
+    .banner4{
+        margin-left: 90px!important;
+    }
+    
+    
+    
+
+}
+@media only screen and (max-width: 461px){
+    #republicbanner{
+        max-width: 400px;}
+        .box img{
+            margin-left: 18%;
+        }
+        .card{
+            margin-left: 25%;
+        }
+}
+@media only screen and (max-width: 461px){
+    #republicbanner{
+        max-width: 300px;
+        margin-left: 40px!important;}
+        .banner2{
+            margin-left: 60px;
+        }
+        .banner4{
+            margin-left: 60px;
+        }
+}
+@media only screen and (max-width: 320px){
+    #republicbanner{
+        max-width: 250px;
+        margin-left: -10px;
+    }
+    .box{
+        max-width: 250px;
+        margin-left: 5px;
+    }
+    .box2{
+        margin-left: 10px;
+    }
+    .card{
+        margin-left: 40px!important;
+    }
+    .side{
+        margin-top: 00px!important;
+    }
+   
+    .call{
+        margin-left: 20px;
+        
+    }
+    .mtop{
+        margin-top: -10px;
+    }
+    .sidebox {
+        max-width: 250px;
+        height: 300px;
+        margin-left: -40px!important;
+    }
+    .box1view{
+       height: 600px;
+      width: 250px!important;
+       margin-left: -40px!important;
+       text-align: center;
+    }
+    .side{
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 990px){
+   .content0{
+   max-width: 900px!important;
+   }
+   .content01{
+    max-width: 800px!important;
+    margin-left: 170px!important;
+    }
+   .address{
+    max-width: 140px;
+   }
+   .side1box{
+    max-width: 500px;
+    max-height: 200px;
+    margin-left: 220px!important;
+    margin-top: 70px;
+   }
+}
+@media only screen and (max-width: 1080px){
+    .content0{
+    max-width: 900px!important;
+    }
+    .content01{
+     max-width: 800px!important;
+     margin-left: 270px!important;
+     }
+    .address{
+     max-width: 240px;
+    }
+    .side1box{
+     max-width: 500px;
+     max-height: 200px;
+     margin-left: 290px!important;
+     margin-top: 170px;
+    }
+ }
+ @media only screen and (max-width: 966px){
+    .content0{
+    max-width: 800px!important;
+    }
+    .content01{
+     max-width: 600px!important;
+     margin-left: 270px!important;
+     }
+    .address{
+     max-width: 240px;
+    }
+    .side1box{
+     max-width: 500px;
+     max-height: 200px;
+     margin-left: 290px!important;
+     margin-top: 170px;
+    }
+ }
+ @media only screen and (max-width: 917px){
+    .content0{
+    max-width: 900px!important;
+    }
+    .content01{
+     max-width: 500px!important;
+     margin-left: 270px!important;
+     }
+    .address{
+     max-width: 240px;
+    }
+    .side1box{
+     max-width: 500px;
+     max-height: 200px;
+     margin-left: 190px!important;
+     margin-top: 170px;
+    }
+ }
+ @media only screen and (max-width: 815px){
+    
+    .content01{
+     max-width: 450px!important;
+     margin-left: 200px!important;
+     }
+    .address{
+     max-width: 240px;
+    }
+    .side1box{
+     max-width: 550px;
+     max-height: 200px;
+     margin-left: 90px!important;
+     margin-top: 100px;
+    }
+ }

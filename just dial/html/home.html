@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body >
+   
+     
+    <nav>
+        <div class="navbar">
+            <img src="images/jdlogosvg.svg" alt="" width="95px" height="35" class="logo">
+            <svg class="line" onclick="navbar()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            <div class="nav-elements" id="nav">
+              
+                <ul class="elements">
+                    
+                    <li class="active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                      </svg></i> English<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                      </svg></li>
+                    <li> We are Hiring</li>
+                    <li> Investor Relations</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+                        <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z"/>
+                      </svg></i> Advertise</li>
+                    <li><p class="small-text">Business</p><br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                      </svg> Free Listing</li>
+                    
+                    <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                      </svg><button class="btn btn-primary loginbtn" ><a href="" class="loginsignup">Login / Sign Up</a></button></li>
+                </ul>
+            </div> 
+        </div>
+       
+    </nav>
+    <hr>
+    <div class="content">
+        <div class="content1">
+                <b><h3 class="head1">Search across
+                    ‘4 Crore+‘ <b class="active">Businesses</b>
+                    
+                    </h3></b>
+             <div class="row mb-3">
+                <div class="col-md-3 location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                    <input type="text" placeholder="Mumbai" class="location-input-bar" >
+                </div>
+                <div class="col-md-5 textinput">
+                    <input type="text" placeholder="Search for">
+                    <div class="searchbtn">
+                        <a class="next " data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Search By Voice"><svg xmlns="http://www.w3.org/2000/svg" class="icon mic" width="20" height="20" fill="blue" class="bi bi-mic" viewBox="0 0 16 16">
+                            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                            <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3"/>
+                          </svg><span class="glyphicon glyphicon-chevron-right"></span></a> 
+                          <div class="orangesearch">
+                            
+                              <a class="next " data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Search for Business"><svg xmlns="http://www.w3.org/2000/svg" class="icon " width="20" height="20" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg> <span class="glyphicon glyphicon-chevron-right"></span></a> 
+                          </div>
+                        
+                    </div>
+                   
+                </div>
+                 </div>
+        </div>
+        <div class="content2" >
+            <div class="row corousal">
+                <div class="col-md-5">
+                    <img src="images/banner_republicday_2024.avif" alt="" width="100%" height="100%" id="republicbanner">
+                </div>
+                <div class="col-md-2 banner1" >
+                    <h5 class="banner-head" >B2B</h5>
+                    <P>quick quotes</P>
+                    <div class="explore1"><p class="Explorepara1">Explore</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </div>
+                    <img src="images/web_repair_image.webp" alt="" height="100%" width="100%" >
+                </div>
+                <div class="col-md-2 banner2">
+                    <h5 class="banner-head">REPAIR </h5>
+                    <P>Nearest</P>
+                    <div class="explore2"><p class="Explorepara2">Explore</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </div>
+                    <img src="images/b2b.webp" alt="" height="100%" width="100%" >
+                </div>
+                <div class="col-md-2 banner3">
+                    <h5 class="banner-head">ESTATE</h5>
+                    <P> Agent</P>
+                    <div class="explore3"><p class="Explorepara3">Explore</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </div>
+                    <img src="images/realestate.webp" alt="" height="100%" width="100%">
+                </div>
+                <div class="col-md-2 banner4">
+                    <h5 class="banner-head">DOCTOR</h5>
+                    <P>Book now</P>
+                    <div class="explore4"><p class="Explorepara4">Explore</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                    </div>
+                    <img src="images/realestate.webp" alt="" height="100%" width="100%" >
+                </div>
+                
+            </div>
+        </div>
+        <div class="content3">
+            <div class="row">
+              
+                <div class="col-md-1 col-sm-6 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Restaurants
+                </div>
+                <div class="col-md-1 col-sm-6 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Hotels
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Beauty spa
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Home Decor
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Wedding requisites
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Education
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Rent&Hire
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Hospitals
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Contractors
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>PetShops
+                </div>
+
+            </div>
+            <div class="row">
+                
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>PG/Hostels
+                   
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Estate Agent
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Dentists
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Gym
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Consultants
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Event Organisers
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Driving Schools
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Packet&Movers
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Courier services
+                </div>
+                <div class="col-md-1 svg">
+                    <img src="images/restaurant-2022.svg" alt=""><br>Popular categories
+                </div>
+
+            </div>
+        </div>
+        <div class="content4">
+
+            <div class="row">
+                <div class="col-md-6 box">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>
+                                Wedding Requisites</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <img src="images/hkim_banquethall.webp" alt="" width="180px" height="120px"><br><p  class="fig-caption">Banquet Halls</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/hkim_bridalrequisites.webp" alt="" width="180px" height="120px"><br><p  class="fig-caption">bridalrequisites</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/hkim_caterers.webp" alt="" width="180px" height="120px"><br><p  class="fig-caption">caterers</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 box">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Beauty & Spa</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                            <div class="col-md-4"> <a href="topparlor.html">
+                                <img src="images/hkim_beautyparlour.webp" alt="" width="180px" height="120px"><br><p  class="fig-caption">beautyparlour</p>
+                            </a>
+                            </div>
+                      
+                       
+                        <div class="col-md-4">
+                            <img src="images/hkim_spamassage.avif" alt="" width="180px" height="120px"><br><p  class="fig-caption">spamassage</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/hkim_salons.webp" alt=""width="180px" height="120px"><br><p  class="fig-caption">salons</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 box">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Repairs & Services</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/hkim_acrepair.webp" alt="" width="180px" height="120px"><br><p  class="fig-caption">acrepair</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/hkim_carservice.webp" alt="" width="180px" height="120px"><br><p  class="fig-caption">carservice</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/hkim_bikeservice.webp" alt="" width="180px" height="120px"><br><p  class="fig-caption">bikeservice</p>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 box">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Daily Needs</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            <img src="images/hkim_movies.webp" alt=""width="180px" height="120px"><br><p class="fig-caption">movies</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/hkim_grocery.webp" alt=""width="180px" height="120px"><br><p  class="fig-caption">grocery</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/hkim_electrician.webp" alt=""width="180px" height="120px"><br><p  class="fig-caption">electrician</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row box2 box2-1">
+                        <div class="col-md-12">
+                             <div class="row ">
+                            <div class="col-md-4">
+                                <div class="row  box2-content ">
+                                    <div class="col-md-12"><h3>Bills & Recharge</h3></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><p>Pay your bills & recharge instantly with Justdial</p></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12" ><a href="" class="no-underline">Explore More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 svg1">
+                                <img src="images/bt_mobile.svg" alt=""><br>Mobile
+                            </div>
+                            <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>Electricity</div>
+                                <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>DTH</div>
+                                <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>Gas</div>
+                                <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>Water</div>
+
+                                <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>Insurance</div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+        </div>
+       
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row box2 box2-2">
+                        <div class="col-md-12">
+                             <div class="row">
+                            <div class="col-md-4">
+                                <div class="row  box2-content">
+                                    <div class="col-md-12"><h3>Travel Bookings</h3></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><p>Instant ticket bookings for your best travel experience</p></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><a href="" class="no-underline">Explore More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 svg1">
+                                <img src="images/bt_mobile.svg" alt=""><br>Flight<br> <p>powered by easemytrip.com</p>
+                            </div>
+                            <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>bus <br> <p>Affordable Rides</p>
+                            </div>
+                                <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>Train<br> <p></p></div>
+                                <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>Hotel<br> <p>Budget-friendly stay</p></div>
+                                <div class="col-md-1 svg1"><img src="images/bt_mobile.svg" alt=""><br>Car rental<br> <p>Drive Easy Anywhere</p></div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+        </div>
+        </div>
+        <div class="content6">
+            <div class="row Popular" ><h3  class="popular-search-head">Popular Searches</h3>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/packersandmovers.avif" alt="" width="250px" height="220px">
+                            </div>
+                        </div>
+                        <div class="row blue">
+                            <div class="col-md-12 ">
+                                <h4 >AC Repair</h4>
+                                <button >enquire now</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/packersandmovers.avif" alt="" width="250px" height="220px">
+                            </div>
+                        </div>
+                        <div class="row blue">
+                            <div class="col-md-12 ">
+                                <h4 >AC Repair</h4>
+                                <button >enquire now</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/packersandmovers.avif" alt=""width="250px" height="220px">
+                            </div>
+                        </div>
+                        <div class="row blue">
+                            <div class="col-md-12 ">
+                                <h4>Lawyers</h4>
+                                <button >enquire now</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/packersandmovers.avif" alt="" width="250px" height="220px">
+                            </div>
+                        </div>
+                        <div class="row blue">
+                            <div class="col-md-12 " >
+                                <h4 >Carpenters</h4>
+                                <button >enquire now</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content7" >
+            <h2 class="recent-activity-head">Recent Activity</h2>
+            <div class="row row-left-minus">
+                <div class="col-md-4 box3">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Neha Masssage A To Z</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Chembur East - Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 chat " >
+                            <p><i class="fa-brands fa-whatsapp "></i> chat</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/couple_spa_at_hablis.avif" alt="" width="420px" height="200px" class="spa-img">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="images/profileImg" alt="" width="50px" height="50px" class="profile-img">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <h5>Devid</h5>
+
+                            </div>
+                            <div class="row">
+                                <p>wrote a review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            I recently visited Regalia Wellness Spa and had an excellent experience...
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 box3">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Neha Masssage A To Z</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Chembur East - Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 chat" >
+                            <p><i class="fa-brands fa-whatsapp"></i> chat</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/couple_spa_at_hablis.avif" alt="" width="420px" height="200px" class="spa-img">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="images/profileImg" alt="" width="50px" height="50px" class="profile-img">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <h5>Devid</h5>
+
+                            </div>
+                            <div class="row">
+                                <p>wrote a review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            I recently visited Regalia Wellness Spa and had an excellent experience...
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 box3">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5>Neha Masssage A To Z</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Chembur East - Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 chat" >
+                            <p><i class="fa-brands fa-whatsapp" ></i> chat</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/couple_spa_at_hablis.avif" alt="" width="420px" height="200px" class="spa-img">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="images/profileImg" alt="" width="50px" height="50px" class="profile-img">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <h5>Devid</h5>
+
+                            </div>
+                            <div class="row">
+                                <p>wrote a review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            I recently visited Regalia Wellness Spa and had an excellent experience...
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+   <hr>
+<footer class="page-footer  ">
+
+    
+    <div class="container text-left text-md-left">
+  
+      
+      <div class="row">
+  
+        <div class="col-md-2 ">
+  
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 foothead" >Quick Links</h5>
+  
+          <ul class="list-unstyled footli">
+            <li>
+              <a href="#!">About us</a>
+            </li>
+            <li>
+              <a href="#!">Investor Relations</a>
+            </li>
+            <li>
+              <a href="#!">We're hiring</a>
+            </li>
+            <li>
+              <a href="#!">Customer Care</a>
+            </li>
+            <li>
+                <a href="#!">Free Listing</a>
+              </li>
+              <li>
+                <a href="#!">What's New</a>
+              </li>
+              <li>
+                <a href="#!">Report a Bug</a>
+              </li>
+          </ul>
+  
+        </div>
+       
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <div class="col-md-2 mx-auto">
+  
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"></h5>
+  
+          <ul class="list-unstyled footli">
+            <li>
+              <a href="#!">
+                Advertise</a>
+            </li>
+            <li>
+              <a href="#!">Media</a>
+            </li>
+            <li>
+              <a href="#!">Testimonials</a>
+            </li>
+            <li>
+              <a href="#!">Feedback</a>
+            </li>
+            <li>
+                <a href="#!">
+                    Business Badge</a>
+              </li>
+              <li>
+                <a href="#!">Jd Collection</a>
+              </li>
+              <li>
+                <a href="#!">Client Success Videos</a>
+              </li>
+          </ul>
+  
+        </div>
+       
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+       
+        <div class="col-md-3 mx-auto">
+  
+         
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 foothead" >Jd Verticals</h5>
+  
+          <ul class="list-unstyled footli">
+            <li>
+              <a href="#!">B2B
+            </a>
+            </li>
+            <li>
+              <a href="#!">Restaurants</a>
+            </li>
+            <li>
+              <a href="#!">Hospitals</a>
+            </li>
+            <li>
+              <a href="#!">Colleges</a>
+            </li>
+            <li>
+                <a href="#!">Car Services
+                </a>
+              </li>
+              <li>
+                <a href="#!">Real Estate
+                </a>
+              </li>
+          </ul>
+  
+        </div>
+     
+        <hr class="clearfix w-100 d-md-none">
+  
+        <div class="col-md-3 mx-auto">
+  
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 "></h5>
+  
+          <ul class="list-unstyled footli ">
+            <li>
+              <a href="#!">All India</a>
+            </li>
+            <li>
+              <a href="#!">Doctors</a>
+            </li>
+            <li>
+              <a href="#!">Schools</a>
+            </li>
+            <li>
+              <a href="#!">AC Repair</a>
+            </li>
+            <li>
+                <a href="#!">Hotels</a>
+              </li>
+              <li>
+                <a href="#!">Bills & Recharge</a>
+              </li>
+          </ul>
+  
+        </div>
+        
+  
+      </div>
+    
+  
+    </div>
+    <hr>
+   
+    <div class="footer-copyright text-left py-3 last">Copyrights 2008-24.  All Rights Reserved. Privacy  |  Terms
+          |  Infringement
+      <a href="/"></a>
+    </div>
+   
+  </footer>
+<script>
+    function navbar(){
+        document.getElementById("nav").style.display = "block";
+    }
+</script>
+<script>
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip({delay: { "show": 500, "hide": 100 }})
+})
+</script>
+</body>
+</html>
